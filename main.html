@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="slide.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@600&family=Courier+Prime:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <img src="photos/circle-cropped (1).png" alt="" id="logo"><span><h1 id="logop" style="margin-left: -410px;">Farm Market</h1></span>
+        <ul class="nav">
+        <li><a href="main.html" id="one">Home</a></li>
+        <li><a href="login.html" id="two">Login</a></li>
+        <li><a href="sale.html" id="three">Sale</a></li>
+        <li><a href="contact.html" id="four">Contact Us</a></li>
+        <li><a href="payment.html" id="four" style="width: 50px;">Cart</a></li>
+        </ul>
+    </div>
+    
+
+
+    <div class="slides">
+    <img src="photos/pagep1.jpg" alt="qwerty" id="img">
+        <h2 id="slid">Your One Step <span id="imp">Grocery Store</span></h2>
+    </div>
+
+    <div style="margin-left: 620px; font-family: 'Courier Prime', monospace; font-size: 30px;">
+        <p>Your Daily Staple</p>
+    </div>
+    <div class="block1">
+
+        <div class="box">
+           <img src="photos/atta.webp" alt="" style="width: 260px; height: 200px; border-radius: 10px;">
+           <div class="bottom" style="margin-top: -10px;">
+            <h3>MRP - 40Rs/Kg</h3>
+            </div>
+           <div class="bottom" style="margin-top: -15px;">
+            <span style="font-weight: bold;">Qty</span><input type="text" id="inp1" placeholder="Enter">
+            <button class="fa fa-shopping-cart" onclick="handleSubmit1()"></button>
+            <button class="fa fa-trash" onclick="del1()"></button>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="photos/oil.webp" alt="" style="width: 260px; height: 200px; border-radius: 10px;">
+            <!-- <div class="bottom">
+                <h2>100<span style="font-size: 20px;">Rs</span>/kg</h2>
+                <button>Add</button>
+            </div> -->
+            <div class="bottom" style="margin-top: -10px;">
+                <h3>MRP - 100Rs/Kg</h3>
+                </div>
+               <div class="bottom" style="margin-top: -15px;">
+                <span style="font-weight: bold;">Qty</span><input type="text" id="inp2" placeholder="Enter">
+                <button class="fa fa-shopping-cart" onclick="handleSubmit2()"></button>
+                <button class="fa fa-trash" onclick="del2()"></button>
+                </div>
+        </div>
+        <div class="box">
+            <img src="photos/rice.webp" alt="" style="width: 260px; height: 200px; border-radius: 10px;">
+            <div class="bottom" style="margin-top: -10px;">
+                <h3>MRP - 120Rs/Kg</h3>
+                </div>
+               <div class="bottom" style="margin-top: -15px;">
+                <span style="font-weight: bold;">Qty</span><input type="text" id="inp3" placeholder="Enter">
+                <button class="fa fa-shopping-cart" onclick="handleSubmit3()"></button>
+                <button class="fa fa-trash" onclick="del3()"></button>
+                </div>
+        </div>
+        <div class="box">
+            <img src="photos/salt.webp" alt="" style="width: 260px; height: 200px; border-radius: 10px;">
+                <div class="bottom" style="margin-top: -10px;">
+                    <h3>MRP - 20Rs/Kg</h3>
+                    </div>
+                   <div class="bottom" style="margin-top: -15px;">
+                    <span style="font-weight: bold;">Qty</span><input type="text" id="inp4" placeholder="Enter">
+                    <button class="fa fa-shopping-cart" onclick="handleSubmit4()"></button>
+                    <button class="fa fa-trash" onclick="del4()"></button>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-left: 580px; font-family: 'Courier Prime', monospace; font-size: 30px;">
+        <p>Drinks's and Beverages</p>
+    </div>
+    <div class="block1">
+        <div class="box">
+           <img src="photos/tea.webp" alt="" style="width: 260px; height: 200px; border-radius: 10px;">
+           <div class="bottom" style="margin-top: -10px;">
+            <h3>MRP - 200Rs/Kg</h3>
+            </div>
+           <div class="bottom" style="margin-top: -15px;">
+            <span style="font-weight: bold;">Qty</span><input type="text" id="inp5" placeholder="Enter">
+            <button class="fa fa-shopping-cart" onclick="handleSubmit5()"></button>
+            <button class="fa fa-trash" onclick="del5()"></button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="photos/coffee.webp" alt="" style="width: 260px; height: 200px; border-radius: 10px;">
+            <div class="bottom" style="margin-top: -10px;">
+                <h3>MRP - 225Rs/Kg</h3>
+                </div>
+               <div class="bottom" style="margin-top: -15px;">
+                <span style="font-weight: bold;">Qty</span><input type="text" id="inp6" placeholder="Enter">
+                <button class="fa fa-shopping-cart" onclick="handleSubmit6()"></button>
+                <button class="fa fa-trash" onclick="del6()"></button>
+                </div>
+        </div>
+        <div class="box">
+            <img src="photos/juice.webp" alt="" style="width: 260px; height: 200px; border-radius: 10px;">
+            <div class="bottom" style="margin-top: -10px;">
+                <h3>MRP - 50Rs/ltr</h3>
+                </div>
+               <div class="bottom" style="margin-top: -15px;">
+                <span style="font-weight: bold;">Qty</span><input type="text" id="inp7" placeholder="Enter">
+                <button class="fa fa-shopping-cart" onclick="handleSubmit7()"></button>
+                <button class="fa fa-trash" onclick="del7()"></button>
+                </div>
+        </div>
+        <div class="box">
+            <img src="photos/healthdrinks.webp" alt="" style="width: 260px; height: 200px; border-radius: 10px;">
+            <div class="bottom" style="margin-top: -10px;">
+                <h3>MRP - 100Rs/ltr</h3>
+                </div>
+               <div class="bottom" style="margin-top: -15px;">
+                <span style="font-weight: bold;">Qty</span><input type="text" id="inp8" placeholder="Enter">
+                <button class="fa fa-shopping-cart" onclick="handleSubmit8()"></button>
+                <button class="fa fa-trash" onclick="del8()"></button>
+                </div>
+        </div>
+    </div>
+
+    <div style="margin-left: 640px; font-family: 'Courier Prime', monospace; font-size: 30px;">
+        <p>Fresh Fruits</p>
+    </div>
+    <div class="block1">
+        <div class="box">
+           <img src="photos/pear.webp" alt="" style="width: 260px; height: 200px; border-radius: 10px;">
+           <div class="bottom" style="margin-top: -10px;">
+            <h3>MRP - 80Rs/Kg</h3>
+            </div>
+           <div class="bottom" style="margin-top: -15px;">
+            <span style="font-weight: bold;">Qty</span><input type="text" id="inp9" placeholder="Enter">
+            <button class="fa fa-shopping-cart" onclick="handleSubmit9()"></button>
+            <button class="fa fa-trash" onclick="del9()"></button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="photos/orange.webp" alt="" style="width: 260px; height: 200px; border-radius: 10px;">
+            <div class="bottom" style="margin-top: -10px;">
+                <h3>MRP - 70Rs/Kg</h3>
+                </div>
+               <div class="bottom" style="margin-top: -15px;">
+                <span style="font-weight: bold;">Qty</span><input type="text" id="inp10" placeholder="Enter">
+                <button class="fa fa-shopping-cart" onclick="handleSubmit10()"></button>
+                <button class="fa fa-trash" onclick="del10()"></button>
+                </div>
+        </div>
+        <div class="box">
+            <img src="photos/grapes.webp" alt="" style="width: 260px; height: 200px; border-radius: 10px;">
+            <div class="bottom" style="margin-top: -10px;">
+                <h3>MRP - 100Rs/Kg</h3>
+                </div>
+               <div class="bottom" style="margin-top: -15px;">
+                <span style="font-weight: bold;">Qty</span><input type="text" id="inp11" placeholder="Enter">
+                <button class="fa fa-shopping-cart" onclick="handleSubmit11()"></button>
+                <button class="fa fa-trash" onclick="del11()"></button>
+                </div>
+        </div>
+        <div class="box">
+            <img src="photos/kiwi.webp" alt="" style="width: 260px; height: 200px; border-radius: 10px;">
+            <div class="bottom" style="margin-top: -10px;">
+                <h3>MRP - 200Rs/pcs</h3>
+                </div>
+               <div class="bottom" style="margin-top: -15px;">
+                <span style="font-weight: bold;">Qty</span><input type="text" id="inp12" placeholder="Enter">
+                <button class="fa fa-shopping-cart" onclick="handleSubmit12()"></button>
+                <button class="fa fa-trash" onclick="del12()"></button>
+                </div>
+        </div>
+        <div class="box">
+            <img src="photos/avocado.webp" alt="" style="width: 260px; height: 200px; border-radius: 10px;">
+            <div class="bottom" style="margin-top: -10px;">
+                <h3>MRP - 400Rs/pcs</h3>
+                </div>
+               <div class="bottom" style="margin-top: -15px;">
+                <span style="font-weight: bold;">Qty</span><input type="text" id="inp13" placeholder="Enter">
+                <button class="fa fa-shopping-cart" onclick="handleSubmit13()"></button>
+                <button class="fa fa-trash" onclick="del13()"></button>
+                </div>
+        </div>
+    </div>
+
+    <div class="slideshow-container" style="margin-top: 80px;">
+
+        <div class="mySlides fade">
+          <img src="photos/slide1.webp" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="photos/slide2.webp" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="photos/slide3.webp" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+        <script src="slide.js"></script>
+        <script src="main.js"></script>
+</body>
+</html>

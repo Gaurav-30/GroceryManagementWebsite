@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="payment.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@600&family=Courier+Prime:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<h2 style="color: white;  font-family: 'Courier Prime', monospace; font-size: 30px;">Checkout Form</h2>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="endpage.html">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Gaurav Bharadwaj">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="qwerty@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="B-113 hari marg">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Jaipur">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="Rajasthan">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="302027">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Gaurav">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="July">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2020">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="111">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+      <h4>Cart <button onclick="update()">Update cart</button><span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b id="no">13</b></span></h4>
+      <p id="o1"><a href="#">Flour</a>  <span id="price1">1 </span><span style="font-size: 12px;"> X</span><span> 100Rs </span><span id="out1"></span></p>
+      <p id="o2"><a href="#">Ghee</a> <span id="price2">1 </span><span style="font-size: 12px;"> X</span><span> 100Rs </span><span id="out2"></span></p>
+      <p id="o3"><a href="#">Rice</a> <span id="price3">1 </span><span style="font-size: 12px;"> X</span><span> 100Rs </span><span id="out3"></span></p>
+      <p id="o4"><a href="#">Salt</a> <span id="price4">1 </span><span style="font-size: 12px;"> X</span><span> 100Rs </span><span id="out4"></span></p>
+      <p id="o5"><a href="#">Tea</a> <span id="price5">1 </span><span style="font-size: 12px;"> X</span><span> 100Rs </span><span id="out5"></span></p>
+      <p id="o6"><a href="#">Coffee</a> <span id="price6">1 </span><span style="font-size: 12px;"> X</span><span> 100Rs </span><span id="out6"></span></p>
+      <p id="o7"><a href="#">Juice</a> <span id="price7">1 </span><span style="font-size: 12px;"> X</span><span> 100Rs </span><span id="out7"></span></p>
+      <p id="o8"><a href="#">Health Drink</a> <span id="price8">1 </span><span style="font-size: 12px;"> X</span><span> 100Rs </span><span id="out8"></span></p>
+      <p id="o9"><a href="#">Guava</a> <span id="price9">1 </span><span style="font-size: 12px;"> X</span><span> 100Rs </span><span id="out9"></span></p>
+      <p id="o10"><a href="#">Orange</a> <span id="price10">1 </span><span style="font-size: 12px;"> X</span><span> 100Rs </span><span id="out10"></span></p>
+      <p id="o11"><a href="#">Grapes</a> <span id="price11">1 </span><span style="font-size: 12px;"> X</span><span> 100Rs </span><span id="out11"></span></p>
+      <p id="o12"><a href="#">Still</a> <span id="price12">1 </span><span style="font-size: 12px;"> X</span><span> 100Rs </span><span id="out12"></span></p>
+      <p id="o13"><a href="#">Avocado</a> <span id="price13">1 </span><span style="font-size: 12px;"> X</span><span> 100Rs </span><span id="out13"></span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b id="total">$30</b></span></p>
+    </div>
+  </div>
+</div>
+  <script src="payment.js"></script>
+</body>
+</html>
